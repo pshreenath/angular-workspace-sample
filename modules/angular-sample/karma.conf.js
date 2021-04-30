@@ -6,9 +6,9 @@ module.exports = function (config) {
         basePath: '',
         frameworks: ['jasmine', 'karma-typescript'],
         files: [
-            'src/test/test-polyfills.ts',
-            'src/test/testbed-config.ts',
-            'src/test/liferay-mock.js',
+            'src/test-config/test-polyfills.ts',
+            'src/test-config/testbed-config.ts',
+            'src/test-config/liferay-mock.js',
             { pattern: 'assets/app/**/*.html', served: true},
             'src/**/*.ts'
         ],
