@@ -30,6 +30,9 @@ module.exports = function (config) {
             },
             clearContext: false // leave Jasmine Spec Runner output visible in browser
         },
+        proxies: {
+            '/o/angular-sample/': '/base/assets/'
+        },
         port: 9876,
         colors: true,
         logLevel: config.LOG_INFO,

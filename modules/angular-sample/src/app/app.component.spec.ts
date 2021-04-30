@@ -1,7 +1,5 @@
 import {AppComponent} from './app.component';
 import {ComponentFixture, TestBed, waitForAsync} from "@angular/core/testing";
-import {KarmaUrlResolver} from "../test/karma-url-resolver";
-import {UrlResolver} from "@angular/compiler";
 import {By} from "@angular/platform-browser";
 
 describe('AppComponent', () => {
@@ -9,12 +7,6 @@ describe('AppComponent', () => {
     let app: AppComponent
 
     beforeEach(waitForAsync(() => {
-        TestBed.configureCompiler({
-            providers: [
-                {provide: UrlResolver, useClass: KarmaUrlResolver, deps: []},
-            ]
-        });
-
         TestBed.configureTestingModule({
             declarations: [
                 AppComponent
