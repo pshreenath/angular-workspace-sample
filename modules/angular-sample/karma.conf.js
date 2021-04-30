@@ -12,6 +12,10 @@ module.exports = function (config) {
             { pattern: 'assets/app/**/*.html', served: true},
             'src/**/*.ts'
         ],
+        exclude: [
+            "src/index.ts",
+            "src/app/dynamic.loader.ts"
+        ],
         preprocessors: {
             '**/*.ts': 'karma-typescript'
         },
